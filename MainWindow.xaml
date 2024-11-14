@@ -1,0 +1,16 @@
+﻿<Window x:Class="cafeteria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cafetería" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNombre" Width="200" Height="30" Margin="10" PlaceholderText="Nombre"/>
+        <TextBox x:Name="txtEmail" Width="200" Height="30" Margin="10,50,0,0" PlaceholderText="Email"/>
+        <PasswordBox x:Name="txtPassword" Width="200" Height="30" Margin="10,100,0,0" PlaceholderText="Password"/>
+        <ComboBox x:Name="cmbTipoUsuario" Width="200" Height="30" Margin="10,150,0,0">
+            <ComboBoxItem Content="Estudiante"/>
+            <ComboBoxItem Content="Docente"/>
+            <ComboBoxItem Content="PersonalAdministrativo"/>
+        </ComboBox>
+        <Button Content="Ingresar Usuario" Width="200" Height="30" Margin="10,200,0,0" Click="IngresarUsuario_Click"/>
+    </Grid>
+</Window>
